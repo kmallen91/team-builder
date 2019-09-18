@@ -1,7 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useEffect } from "react";
 
 const MemberList = props => {
     const [member, setMember] = useState({name:"", email:"", role:""});
+
+//     useEffect(()=> {
+    
+// })
 
     const handleChanges = e => {
        setMember({...member, [e.target.name]: e.target.value });
